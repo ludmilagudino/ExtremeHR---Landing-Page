@@ -106,6 +106,10 @@ header {
         font-size: 14px;
         text-decoration: none;
       }
+
+      .btnContact:hover {
+        background-color: #562a63;
+      }
     }
   }
 }
@@ -113,8 +117,8 @@ header {
 .hero-section {
   img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina el espacio blanco debajo de la imagen */
+    height: auto;
+    display: block;
   }
 
   .overlay {
@@ -134,14 +138,18 @@ header {
   }
 
   .cta-button {
-    background-color: #6c2d82; /* Color del botón */
+    background-color: #6b367b;
     color: #fff;
     padding: 12px 64px;
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 25px;
     font-weight: 700;
-    font-family: "Pragmatica", sans-serif; /* Aplica la fuente Pragmatica */
+    font-family: "Pragmatica", sans-serif;
+  }
+
+  .cta-button:hover {
+    background-color: #562a63;
   }
 }
 
@@ -252,7 +260,7 @@ header {
       }
     }
     .cta-button {
-      background-color: #6c2d82; /* Color del botón */
+      background-color: #6b367b;
       border: none;
       width: fit-content;
       border-radius: 25px;
@@ -262,7 +270,7 @@ header {
         text-decoration: none;
         font-size: 14px;
         font-weight: 700;
-        font-family: "Pragmatica", sans-serif; /* Aplica la fuente Pragmatica */
+        font-family: "Pragmatica", sans-serif;
       }
     }
   }
@@ -464,7 +472,7 @@ header {
         font-weight: 400;
         line-height: 22.4px;
       }
-      p {
+      a {
         margin: 0;
         color: black;
         font-size: 16px;
@@ -624,11 +632,11 @@ header {
             font-size: 20px;
             font-weight: 400;
             line-height: 19.6px;
-            text-decoration: none; /* Quita el subrayado de los enlaces */
+            text-decoration: none;
             font-family: "Montserrat", sans-serif;
 
             &:hover {
-              text-decoration: underline; /* Añade subrayado cuando pasas el cursor */
+              text-decoration: underline;
             }
           }
         }
@@ -678,7 +686,7 @@ header {
     }
 
     button {
-      background-color: #6b367b; /* Color del botón */
+      background-color: #6b367b;
       color: white;
       padding: 14px 28px;
       font-size: 16px;
@@ -690,7 +698,7 @@ header {
     }
 
     button:hover {
-      background-color: #562a63; /* Color más oscuro al pasar el mouse */
+      background-color: #562a63;
     }
   }
 }
@@ -867,6 +875,48 @@ header {
 
     .card:hover .front-content p {
       opacity: 0;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 3rem 5rem;
+  background-color: #6b367b;
+  .info {
+    display: flex;
+    gap: 3rem;
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: #f0ebf2;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 22.4px;
+      }
+
+      span {
+        margin: 0.5rem;
+        color: white;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      .social-media {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        a {
+          text-align: center;
+          width: 16px;
+          height: 16px;
+          color: white;
+          font-size: 24px;
+        }
+      }
     }
   }
 }
