@@ -1,0 +1,872 @@
+@font-face {
+  font-family: "Pragmatica";
+  src: url("fonts/fonnts.com-Pragmatica_Black.otf") format("opentype");
+  font-weight: 900;
+  /* Por ejemplo, si es "Black" */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  src: url("fonts/fonnts.com-Pragmatica_Bold.otf") format("opentype");
+  font-weight: 700;
+  /* Por ejemplo, si es "Black" */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  src: url("fonts/fonnts.com-Pragmatica_Cond_Book.otf") format("opentype");
+  font-weight: 400;
+  /* Por ejemplo, si es "Book" */
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pragmatica", Arial, sans-serif;
+}
+
+header {
+  .top-bar {
+    background-color: #6b367b;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+    padding: 8px 140px 8px 140px;
+    gap: 32px;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 32px;
+
+    .contact {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    gap: 32px;
+  }
+
+  i {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 140px 8px 140px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .logo {
+      img {
+        height: 53px;
+        width: 180px;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+
+        li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #1e1e1e;
+        }
+      }
+
+      .btnContact {
+        background-color: #6b367b;
+        color: #fff;
+        padding: 8px 32px;
+        border-radius: 16px;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero-section {
+  img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Texto en color blanco */
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 4.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: "Pragmatica", sans-serif;
+  }
+
+  .cta-button {
+    background-color: #6c2d82; /* Color del botón */
+    color: #fff;
+    padding: 12px 64px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: "Pragmatica", sans-serif; /* Aplica la fuente Pragmatica */
+  }
+}
+
+.title {
+  margin: 0;
+  color: #333333;
+  font-size: 40px;
+  font-family: Pragmatica;
+  font-weight: 700;
+  line-height: 48px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0;
+  color: #6b367b;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.title-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.solutions-section {
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .solutions {
+    display: flex;
+    gap: 16px;
+    padding: 0 140px 0 140px;
+
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+      color: #333333;
+      font-size: 24px;
+      font-family: Pragmatica;
+      font-weight: 700;
+      line-height: 28.8px;
+      word-wrap: break-word;
+    }
+
+    p {
+      color: #303030;
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 22.4px;
+      word-wrap: break-word;
+      text-align: center;
+    }
+  }
+}
+
+.aboutus-section {
+  background-color: #f7f7f7;
+  display: flex;
+  padding-right: 140px;
+  gap: 1.25rem;
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+
+    .title-sections {
+      p {
+        color: #303030;
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 24px;
+        word-wrap: break-word;
+        margin: 0;
+      }
+      h2 {
+        color: #4b4b4b;
+        font-size: 40px;
+        font-family: Pragmatica;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 0;
+      }
+    }
+    .text {
+      color: #303030;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 24px;
+      word-wrap: break-word;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+    .cta-button {
+      background-color: #6c2d82; /* Color del botón */
+      border: none;
+      width: fit-content;
+      border-radius: 25px;
+      padding: 12px 64px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Pragmatica", sans-serif; /* Aplica la fuente Pragmatica */
+      }
+    }
+  }
+}
+
+.service-section {
+  padding: 5rem 8.75rem 5rem 8.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  .titulo {
+    width: 376px;
+    h3 {
+      color: #4b4b4b;
+      font-size: 40px;
+      font-family: Pragmatica;
+      font-weight: 700;
+      line-height: 48px;
+    }
+    p {
+      color: #757575;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .business-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+  }
+
+  .personal-services {
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    .titulo {
+      width: auto;
+      padding: 24px;
+    }
+  }
+
+  .card-container {
+    width: 376px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+
+  .card .front-content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card .front-content p {
+    font-size: 20px;
+    font-family: Pragmatica;
+    font-weight: 700;
+    line-height: 28.8px;
+    opacity: 1;
+    background: #1e1e1e;
+    padding: 0 32px 0 32px;
+    text-align: center;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 88%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    background: linear-gradient(
+      315deg,
+      #e5d6e4 0%,
+      #b27fb8 0.01%,
+      #a263aa 34.5%,
+      #6b367b 69%,
+      #6b367b 100%
+    );
+
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    pointer-events: none;
+    -webkit-transform: translateY(96%);
+    -ms-transform: translateY(96%);
+    transform: translateY(96%);
+    -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card .content .heading {
+    text-align: left;
+    font-size: 24px;
+    font-family: Pragmatica;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 0;
+  }
+
+  .card .content .text {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .card:hover .content {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .card:hover .front-content {
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+
+  .card:hover .front-content p {
+    opacity: 0;
+  }
+}
+
+.divider {
+  display: flex;
+  padding: 4rem 8.75rem 4rem 8.75rem;
+  background-image: url(img/Informacion\ de\ contacto.png);
+  background-size: cover;
+  justify-content: space-between;
+  .title-section {
+    p {
+      color: #4b4b4b;
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 11px;
+    gap: 4rem;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h4 {
+        margin: 0;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+      p {
+        margin: 0;
+        color: black;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 22.4px;
+      }
+    }
+  }
+}
+
+.mision-section {
+  padding: 5rem 8.75rem 5rem 8.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  .description {
+    color: #1e1e1e;
+  }
+
+  .how-to {
+    h3 {
+      color: #6b367b;
+      font-size: 32px;
+      font-family: Montserrat;
+      font-weight: 700;
+      line-height: 38.4px;
+      margin: 0;
+    }
+    p {
+      color: #303030;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 600;
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+
+  .mision-text {
+    display: flex;
+    gap: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+
+    align-items: center;
+    flex-wrap: wrap;
+    .items {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-width: 50%;
+      gap: 2rem;
+      .item {
+        display: flex;
+        gap: 1.75rem;
+
+        h4 {
+          color: #6b367b;
+          font-size: 24px;
+          font-family: Pragmatica;
+          font-weight: 700;
+          line-height: 38.4px;
+          margin: 0;
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          h3 {
+            color: #1e1e1e;
+            font-size: 20px;
+            font-family: Pragmatica;
+            font-weight: 700;
+            line-height: 28.8px;
+            margin: 0;
+          }
+          p {
+            color: #757575;
+            font-size: px;
+            font-family: Montserrat;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    img-container {
+      display: flex;
+      flex: 1;
+      max-width: 50%;
+    }
+  }
+}
+
+.form-section {
+  padding: 5rem 8.75rem 5rem 8.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #f8f8f8;
+
+  .form-container {
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    padding: 2rem 3rem 2rem 3rem;
+    justify-content: space-between;
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+      max-width: 40%;
+      padding-right: 3rem;
+      .title {
+        color: #1e1e1e;
+        font-family: "Pragmatica", sans-serif;
+        text-align: left;
+        h3 {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 43.2px;
+          margin: 0;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          .icon {
+            padding: 8px;
+            background-color: #fa8a23;
+            color: #ffffff;
+            border-radius: 50px;
+          }
+
+          a {
+            color: #1e1e1e;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 19.6px;
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+            font-family: "Montserrat", sans-serif;
+
+            &:hover {
+              text-decoration: underline; /* Añade subrayado cuando pasas el cursor */
+            }
+          }
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex: 1;
+      max-width: 60%;
+      flex-direction: column;
+      gap: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background-color: #fdf9fd; /* Fondo suave */
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      color: #757575;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+      width: auto;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #757575;
+      font-size: 14px;
+      font-family: Inter;
+      font-weight: 400;
+      line-height: 19.6px;
+    }
+
+    button {
+      background-color: #6b367b; /* Color del botón */
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    button:hover {
+      background-color: #562a63; /* Color más oscuro al pasar el mouse */
+    }
+  }
+}
+
+.team-section {
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    .card-container {
+      width: 325px;
+      height: 500px;
+      position: relative;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    .card .front-content {
+      width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      padding: 0 32px 0 32px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        color: #6b367b;
+        font-size: 24px;
+        font-family: Pragmatica;
+        font-weight: 700;
+        line-height: 38.4px;
+        margin: 0;
+      }
+      h4 {
+        color: #1e1e1e;
+        font-size: 18px;
+        font-family: Pragmatica;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0;
+      }
+
+      .social-media {
+        display: flex;
+        gap: 1rem;
+        a {
+          text-align: center;
+          width: 16px;
+          height: 16px;
+          color: #6b367b;
+          padding: 8px;
+          border-radius: 16px;
+          border: #6b367b 1px solid;
+        }
+      }
+    }
+
+    .card .front-content p {
+      color: black;
+      font-size: 14px;
+      font-family: Montserrat;
+      font-style: italic;
+      font-weight: 400;
+      opacity: 1;
+      background: #1e1e1e;
+      text-align: center;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card .content {
+      position: absolute;
+      width: -webkit-fill-available;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: left;
+      gap: 10px;
+      background: linear-gradient(
+        315deg,
+        #e5d6e4 0%,
+        #b27fb8 0.01%,
+        #a263aa 34.5%,
+        #6b367b 69%,
+        #6b367b 100%
+      );
+
+      color: #e8e8e8;
+      padding: 20px;
+      line-height: 1.5;
+      border-radius: 5px;
+      pointer-events: none;
+      -webkit-transform: translateY(96%);
+      -ms-transform: translateY(96%);
+      transform: translateY(96%);
+      -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .card .content .heading {
+      color: white;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    .card .content .text {
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 28px;
+    }
+
+    .card:hover .content {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    .card:hover .front-content {
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%);
+    }
+
+    .card:hover .front-content p {
+      opacity: 0;
+    }
+  }
+}
