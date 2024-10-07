@@ -882,7 +882,8 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 5rem 3rem 5rem;
+  align-items: center;
+  padding: 1rem 5rem 1rem 5rem;
   background-color: #6b367b;
   .info {
     display: flex;
@@ -892,7 +893,7 @@ footer {
       flex-direction: column;
       h3 {
         color: #f0ebf2;
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Montserrat", sans-serif;
         line-height: 22.4px;
       }
@@ -900,7 +901,7 @@ footer {
       span {
         margin: 0.5rem;
         color: white;
-        font-size: 20px;
+        font-size: 14px;
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         line-height: 28px;
