@@ -189,6 +189,7 @@ header {
 
   .solutions {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     padding: 0 140px 0 140px;
 
@@ -213,20 +214,22 @@ header {
       word-wrap: break-word;
       text-align: center;
     }
+
+    .solution {
+      width: 376px;
+    }
   }
 }
 
 .aboutus-section {
-  background-color: #f7f7f7;
   display: flex;
-  padding-right: 140px;
-  gap: 1.25rem;
-
   .about-us {
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
+    padding-right: 140px;
 
     .title-sections {
       p {
@@ -307,6 +310,7 @@ header {
 
   .personal-services {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     justify-content: space-around;
     .titulo {
@@ -442,6 +446,7 @@ header {
 
 .divider {
   display: flex;
+  flex-wrap: wrap;
   padding: 4rem 8.75rem 4rem 8.75rem;
   background-image: url(img/Informacion\ de\ contacto.png);
   background-size: cover;
@@ -918,6 +923,132 @@ footer {
           font-size: 24px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+
+  .hero-section {
+    .overlay {
+      top: 10%;
+      h1 {
+        font-size: 32px;
+      }
+    }
+    .cta-button {
+      font-size: 14px;
+    }
+  }
+  .solutions-section {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+  }
+
+  .aboutus-section {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: -webkit-fill-available;
+    }
+
+    .about-us {
+      padding: 3rem 1rem 3rem 1rem;
+    }
+  }
+
+  .service-section {
+    padding: 5rem 1rem 5rem 1rem;
+    .titulo {
+      width: auto;
+      padding: 24px;
+      text-align: center;
+      h3 {
+        margin: 0;
+      }
+    }
+    .business-services {
+      justify-content: center;
+    }
+
+    .personal-services {
+      justify-content: center;
+    }
+  }
+
+  .divider {
+    padding: 5rem 1rem 5rem 1rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .mision-section {
+    padding: 5rem 1rem 5rem 1rem;
+
+    .mision-text {
+      flex-direction: column;
+      max-width: 100%;
+      .items,
+      .img-container {
+        max-width: 100%;
+        align-items: center;
+      }
+
+      .items {
+        gap: 1.5rem;
+        max-width: none;
+      }
+
+      .img-container {
+        margin-top: 2rem;
+        justify-content: center;
+        max-width: none;
+      }
+
+      .text h3 {
+        text-align: center;
+      }
+
+      .text p {
+        text-align: center;
+      }
+    }
+  }
+
+  .form-section {
+    padding: 5rem 1rem 5rem 1rem;
+    .form-container {
+      flex-direction: column;
+      gap: 2rem;
+
+      .contact {
+        max-width: 100%;
+      }
+
+      form {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .team-section {
+    padding: 5rem 1rem 5rem 1rem;
+    .cards {
+      justify-content: space-between;
+    }
+  }
+
+  footer {
+    padding: 5rem 1rem 5rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    .info {
+      justify-content: space-between;
+      gap: 10rem;
     }
   }
 }
