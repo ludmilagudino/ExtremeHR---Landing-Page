@@ -258,6 +258,7 @@ header {
     justify-content: center;
     padding-left: 2rem;
     padding-right: 140px;
+    gap: 3rem;
 
     .title-sections {
       p {
@@ -313,7 +314,12 @@ header {
   flex-direction: column;
   gap: 5rem;
   .titulo {
-    width: 376px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
     h3 {
       color: #4b4b4b;
       font-size: 40px;
@@ -333,7 +339,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 24px;
+    row-gap: 4rem;
   }
 
   .personal-services {
@@ -348,7 +354,7 @@ header {
   }
 
   .card-container {
-    width: 376px;
+    width: 420px;
     height: 300px;
     position: relative;
     border-radius: 10px;
@@ -402,7 +408,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 88%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -668,6 +674,8 @@ header {
             line-height: 19.6px;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
+            word-break: break-all; /* Corta la palabra si es demasiado larga para caber en la línea */
+            white-space: normal;
 
             &:hover {
               text-decoration: underline;
