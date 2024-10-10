@@ -986,7 +986,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem 1rem 5rem;
+  padding: 2rem 8.75rem 2rem 8.75rem;
   background-color: #6b367b;
   .info {
     display: flex;
@@ -995,38 +995,58 @@ footer {
     .contact-info {
       display: flex;
       flex-direction: column;
-      h3 {
-        color: #f0ebf2;
-        font-size: 16px;
-        font-family: "Montserrat", sans-serif;
-        line-height: 22.4px;
+      gap: 1rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Montserrat;
       }
 
-      span {
-        margin: 0.5rem;
-        color: white;
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        line-height: 28px;
-      }
-      .social-media {
+      .contact {
         display: flex;
-        gap: 2rem;
-        align-items: center;
-        a {
-          text-align: center;
-          width: 16px;
-          height: 16px;
-          color: white;
-          font-size: 24px;
-        }
+        gap: 8px;
+      }
+    }
+    h3 {
+      color: #f0ebf2;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 22.4px;
+    }
+
+    span {
+      margin: 0.5rem;
+      color: white;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      line-height: 28px;
+    }
+    .social-media {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      a {
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        color: white;
+        font-size: 24px;
       }
     }
   }
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
   .container-fluid {
     padding: 0 16px 0 16px;
   }
@@ -1141,12 +1161,33 @@ footer {
 
   .form-section {
     padding: 5rem 1rem 5rem 1rem;
+    form {
+      .form-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+      }
+    }
     .form-container {
       flex-direction: column;
       gap: 2rem;
+      padding: 1rem 2rem 1rem 2rem;
 
       .contact {
         max-width: 100%;
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          .info {
+            a {
+              color: #1e1e1e;
+              font-size: 14px;
+            }
+          }
+        }
       }
 
       form {
@@ -1169,7 +1210,7 @@ footer {
     gap: 2rem;
     .info {
       justify-content: space-between;
-      gap: 10rem;
+      gap: 2rem;
     }
   }
 }
