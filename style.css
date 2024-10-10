@@ -95,14 +95,13 @@ a.nav-link {
   text-transform: uppercase;
   color: #303030;
   font-weight: 400;
-  text-transform: uppercase;
   line-height: 16px;
   font-size: 16px;
+  text-decoration: none;
 }
 
 a.nav-link:hover {
   color: #4b2562;
-  font-weight: bold;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -169,7 +168,6 @@ a.nav-link:hover {
   }
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
   .hero {
     height: auto;
@@ -1029,6 +1027,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 16px 0 16px;
+  }
+
+  .btnContact {
+    display: none;
+  }
+  header {
+    .top-bar {
+      display: none;
+    }
+  }
   .hero-section {
     .overlay {
       top: 10%;
