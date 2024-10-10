@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
@@ -22,8 +23,8 @@
   <header>
     <div class="top-bar">
       <div class="contact-info">
-        <span class="contact"><i class="fa-solid fa-phone"></i> +54 9 3516 814742</span>
-        <span class="contact"><i class="fa-solid fa-envelope"></i> info.extremehr@gmail.com</span>
+        <a class="contact" href="tel:+5493516814742" target="_blank"> <i class="fa-solid fa-phone"></i>+54 9 3516 814742</a>
+        <a class="contact" href="mailto:info.extremehr@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i>info.extremehr@gmail.com</a>
       </div>
       <div class="social-media">
         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -31,24 +32,6 @@
         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
-    <!-- <nav>
-      <div class="logo">
-        <img src="img/Logo EXTREME.png" alt="Logo Extremehr" />
-      </div>
-
-      <div class="navbar">
-        <ul class="nav-links">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre Nosotras</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#mission">Misión</a></li>
-          <li><a href="#testimonials">Testimonios</a></li>
-          <li><a href="#contact">Contacto</a></li>
-          <li><a href="#team">Equipo</a></li>
-        </ul>
-        <a href="" class="cta-button">Contactanos</a>
-      </div>
-    </nav> -->
 
   </header>
   <nav class="navbar sticky-top navbar-expand-lg">
@@ -60,10 +43,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active home" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre Nosotras</a>
+            <a class="nav-link " href="#about">Sobre Nosotras</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Servicios</a>
@@ -103,8 +86,8 @@
         Transforma tu Empresa con <br />Soluciones Estratégicas
       </h2>
     </div>
-    <div class="solutions">
-      <div class="solution">
+    <div class="solutions" >
+      <div class="solution" data-aos="fade-up" >
         <img src="img/Innovacion.svg" alt="" />
         <h3>
           Innovacion y <br />
@@ -115,7 +98,7 @@
           modernas y efectivas.
         </p>
       </div>
-      <div class="solution">
+      <div class="solution" data-aos="fade-up" data-aos-delay="200" >
         <img src="img/Estructuras.svg" alt="" />
         <h3>
           Estructuras y Procesos <br />
@@ -125,7 +108,7 @@
           Optimizamos estructuras y procesos para maximizar la eficiencia.
         </p>
       </div>
-      <div class="solution">
+      <div class="solution" data-aos="fade-up" data-aos-delay="300">
         <img src="img/Equipos.svg" alt="" />
         <h3>
           Equipos Más Fuertes y <br />
@@ -158,8 +141,8 @@
         </p>
       </div>
 
-      <a href="https://www.instagram.com/extremehr/" class="cta-button" target="_blank" rel="noopener noreferrer">
-        Conocé más <i class="fa-solid fa-arrow-right"></i>
+      <a href="https://www.instagram.com/extremehr/" class="cta-button" target="_blank" rel="noopener noreferrer" data-aos="fade-right" data-aos-duration="500">
+        Conocé más <i class="fa-solid fa-arrow-right" "></i>
       </a>
       
     </div>
@@ -171,7 +154,7 @@
       <h2 class="title">Soluciones a la medida <br />de tus necesidades</h2>
     </div>
     <div class="business-services">
-      <div class="titulo">
+      <div class="titulo" data-aos="fade-right" data-aos-duration="500">
         <h3>
           Servicios
           Empresariales
@@ -181,7 +164,7 @@
           fortalecer tu organización.
         </p>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="100" data-aos-duration="300">
         <div class="card">
           <div class="front-content">
             <img src="img/Estructurayproceso.png" alt="" />
@@ -196,7 +179,7 @@
           </div>
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="200" data-aos-duration="300">
         <div class="card">
           <div class="front-content">
             <img src="img/growth management.png" alt="" />
@@ -211,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="300" data-aos-duration="300"> 
         <div class="card">
           <div class="front-content">
             <img src="img/desarrollo.png" alt="" />
@@ -226,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="400" data-aos-duration="300">
         <div class="card">
           <div class="front-content">
             <img src="img/employeejourney.png" alt="" />
@@ -241,7 +224,7 @@
           </div>
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="500" data-aos-duration="500">
         <div class="card">
           <div class="front-content">
             <img src="img/bienestar.png" alt="" />
@@ -258,7 +241,7 @@
       </div>
     </div>
     <div class="personal-services">
-      <div class="titulo">
+      <div class="titulo" data-aos="fade-right">
         <h3>
           Servicios personales
         </h3>
@@ -266,7 +249,7 @@
           Asesoría personalizada para tu desarrollo profesional.
         </p>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="flip-up" data-aos-delay="100">
         <div class="card">
           <div class="front-content">
             <img src="img/branding.png" alt="" />
@@ -321,7 +304,7 @@
     <div class="mision-text">
 
       <div class="items">
-        <div class="item">
+        <div class="item" data-aos="fade-down" data-aos-delay="100" data-aos-duration="700">
           <h4>01</h4>
           <div class="text">
             <h3>Impulsar el crecimiento organizacional</h3>
@@ -329,7 +312,7 @@
               sostenible y eficiente, adaptándose a las demandas cambiantes del mercado.</p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-down" data-aos-delay="200" data-aos-duration="700">
           <h4>02</h4>
           <div class="text">
             <h3>Fortalecer el talento humano</h3>
@@ -337,7 +320,7 @@
               esté alineado con los objetivos organizacionales y motivado para alcanzar el éxito.</p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="fade-down" data-aos-delay="300" data-aos-duration="700">
           <h4>03</h4>
           <div class="text">
             <h3>Innovar en cada proceso</h3>
@@ -402,7 +385,7 @@
       <h2 class="title">Conoce nuestro equipo</h2>
     </div>
     <div class="cards">
-      <div class="card-container">
+      <div class="card-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
         <div class="card">
           <div class="front-content">
             <div class="text">
@@ -440,7 +423,7 @@
           </div>
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
         <div class="card">
           <div class="front-content">
             <div class="text">
@@ -506,8 +489,8 @@
     </div>
 
   </footer>
-</body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.7.0/dist/email.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.7.0/dist/email.min.js"></script>
 <script type="text/javascript">
    (function() {
       emailjs.init("NZVWKqPBudnSwUDcn"); 
@@ -516,5 +499,11 @@
 
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
 
 </html>
