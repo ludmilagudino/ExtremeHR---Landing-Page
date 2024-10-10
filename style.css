@@ -63,7 +63,7 @@ header {
     font-size: 16px;
   }
 
-  nav {
+  /* nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,16 +112,56 @@ header {
         background-color: #562a63;
       }
     }
-  }
+  } */
+}
+nav {
+  background-color: white;
+  background: #f7f7f7;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
+.container-fluid {
+  gap: 2rem;
+  padding: 0 140px 0 140px;
+}
+.navbar-brand {
+  img {
+    height: 53px;
+    width: 180px;
+  }
+}
+.navbar-expand {
+  justify-content: center;
+}
+
+a.nav-link {
+  text-transform: uppercase;
+  color: #1e1e1e;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+
+.btnContact {
+  background-color: #6b367b;
+  color: #fff;
+  padding: 8px 32px;
+  border-radius: 16px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btnContact:hover {
+  background-color: #562a63;
+}
 .hero {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  justify-content: flex-start;
   height: 100vh;
   padding: 0 140px 0 140px;
-  background-image: url("img/hero.png"); /* Usa aquí tu imagen de fondo */
+  background-image: url("img/hero.png");
   background-size: cover;
   position: relative;
 
@@ -129,31 +169,31 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Alinea el contenido a la izquierda */
-    text-align: left; /* Alinea el texto a la izquierda */
+    align-items: flex-start;
+    text-align: left;
     max-width: 600px;
     padding: 20px;
 
     .text-content {
       h1 {
-        font-size: clamp(3rem, 4vw, 10rem); /* Tamaño de fuente responsivo */
+        font-size: clamp(3rem, 4vw, 10rem);
         color: white;
         margin-bottom: 20px;
       }
-
       .cta-button {
-        padding: 10px 30px;
         background-color: #6b367b;
-        color: white;
+        border: none;
+        width: fit-content;
+        border-radius: 25px;
+        padding: 12px 64px;
+        color: #fff;
         text-decoration: none;
-        font-weight: bold;
-        border-radius: 30px;
-        font-size: clamp(1rem, 2vw, 1.2rem); /* Tamaño del botón responsivo */
-        transition: background-color 0.3s ease;
-
-        &:hover {
-          background-color: #522a63;
-        }
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Pragmatica", sans-serif;
+      }
+      .cta-button:hover {
+        background-color: #562a63;
       }
     }
   }
@@ -291,19 +331,28 @@ header {
         font-weight: bold;
       }
     }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "Pragmatica", sans-serif;
+    }
     .cta-button {
       background-color: #6b367b;
       border: none;
       width: fit-content;
       border-radius: 25px;
       padding: 12px 64px;
-      a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 700;
-        font-family: "Pragmatica", sans-serif;
+
+      i {
+        color: white;
+        padding-left: 4px;
       }
+    }
+    .cta-button:hover {
+      background-color: #562a63;
     }
   }
 }
@@ -636,6 +685,9 @@ header {
         color: #1e1e1e;
         font-family: "Pragmatica", sans-serif;
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         h3 {
           font-size: 30px;
           font-weight: 700;
@@ -674,7 +726,7 @@ header {
             line-height: 19.6px;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
-            word-break: break-all; /* Corta la palabra si es demasiado larga para caber en la línea */
+            word-break: break-all;
             white-space: normal;
 
             &:hover {
@@ -692,6 +744,25 @@ header {
       gap: 1.5rem;
       border-radius: 12px;
     }
+    #status-message {
+      margin-top: 1rem;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    #status-message.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    #status-message.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
 
     .form-row {
       display: flex;
@@ -706,7 +777,7 @@ header {
       padding: 12px;
       border: 1px solid #eee;
       border-radius: 8px;
-      background-color: #fdf9fd; /* Fondo suave */
+      background-color: #fdf9fd;
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
       color: #757575;
@@ -757,7 +828,7 @@ header {
     gap: 5rem;
     .card-container {
       width: 325px;
-      height: 500px;
+      height: 525px;
       position: relative;
       border-radius: 10px;
       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -794,6 +865,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
       }
 
       h3 {
@@ -811,18 +883,6 @@ header {
         font-weight: 700;
         line-height: 24px;
         margin: 0;
-      }
-
-      .social-media {
-        display: flex;
-        gap: 1rem;
-        a {
-          text-align: center;
-          width: 16px;
-          height: 16px;
-          color: #6b367b;
-          padding: 8px;
-        }
       }
     }
 
@@ -892,6 +952,18 @@ header {
       font-weight: 400;
       line-height: 24px;
       margin: 0;
+      text-align: center;
+    }
+    .social-media {
+      display: flex;
+      gap: 1rem;
+      a {
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        color: #ffffff;
+        padding: 8px;
+      }
     }
 
     .card .content .text {
@@ -917,6 +989,29 @@ header {
       opacity: 0;
     }
   }
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6b367b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #4b2562;
+}
+
+#scrollToTopBtn i {
+  font-size: 24px;
 }
 
 footer {
@@ -964,10 +1059,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
-    display: none;
-  }
-
   .hero-section {
     .overlay {
       top: 10%;
