@@ -761,7 +761,7 @@ a.nav-link:hover {
     textarea::placeholder {
       color: #757575;
       font-size: 14px;
-      font-family: Inter;
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
       line-height: 19.6px;
     }
@@ -784,20 +784,18 @@ a.nav-link:hover {
   }
 }
 
-.testimonials {
-  text-align: center;
-  padding: 50px 0;
-}
-
-.testimonials h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
 .testimonial-slider {
   max-width: 1242px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .client {
@@ -858,6 +856,12 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  .card-socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
   .cards {
     display: flex;
@@ -1024,6 +1028,44 @@ a.nav-link:hover {
 
     .card:hover .front-content p {
       opacity: 0;
+    }
+  }
+}
+
+.team-section {
+  .cards {
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      a {
+        color: #6b367b;
+        display: flex;
+        height: auto;
+        text-decoration: none;
+        width: auto;
+        border: 1px solid #6b367b;
+        border-radius: 32px;
+        align-items: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        i {
+          font-size: 20px;
+          width: 20px;
+          transition: color 0.3s ease;
+          display: flex;
+          padding-left: 1px;
+        }
+      }
+
+      a:hover {
+        background-color: #6b367b;
+        color: white;
+      }
+
+      a:hover i {
+        color: white;
+      }
     }
   }
 }
