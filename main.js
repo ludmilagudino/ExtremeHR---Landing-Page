@@ -13,7 +13,7 @@ document.querySelectorAll("nav a").forEach((anchor) => {
 });
 
 // Inicializa EmailJS con tu Public Key
-emailjs.init("NZVWKqPBudnSwUDcn");
+emailjs.init("VPFVKZZSxafNyFloi");
 
 // Selecciona el formulario y añade el evento 'submit'
 document
@@ -25,7 +25,7 @@ document
     document.getElementById("status-message").innerHTML = "Enviando...";
 
     // Envía el formulario con EmailJS
-    emailjs.sendForm("service_0yw59mn", "template_c2viwti", this).then(
+    emailjs.sendForm("service_w941mkr", "template_prcaaxo", this).then(
       function () {
         // Mensaje de éxito
         document.getElementById("status-message").innerHTML =
@@ -60,3 +60,28 @@ window.onscroll = function () {
 document.getElementById("scrollToTopBtn").onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+$(document).ready(function () {
+  $(".testimonial-slider").slick({
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    adaptiveHeight: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev">&larr;</button>',
+    nextArrow: '<button type="button" class="slick-next">&rarr;</button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  });
+});
